@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dawn's Metrocon Challenge</title>
+        <link rel="stylesheet" href="metrocon.css">
+    </head>
+    <body>
+
+        <main>
+            <section>
+                <h1>Welcome to Dawn's Metrocon Challenge!</h1>
+                <p>A simple scavenger hunt on a bingo card that only requires a picture taken on your phone to do</p>
+            </section>
+
+            <section>
+                <h2>Rules</h2>
+                <ol id="rules">
+                    <li class="rules">Can not start until you enter the convention building</li>
+                    <li class="rules">Only pictures taken inside the convention is allowed</li>
+                    <li class="rules">It is possible to get BINGO with one picture if RNG is on your side as it can apply to multiple things</li>
+                    <img src="link-example.png" alt="Link Figurine" id="link-example">
+                    <p class="example">
+                        For example: with 1 picture of the character Link in any form such as a cosplayer, sticker, figurine, poster, artwork, pin, keychain, bag, backpack, card, shirt, you name it! Would all count shaded in red below
+                    </p>
+                    <table id="bingo-card">
+                        <tbody>
+                            <tr>
+                                <td class="bingo-cell bingo-example">Sword</td>
+                                <td class="bingo-cell">Denji</td>
+                                <td class="bingo-cell bingo-example">The Legend of Zelda</td>
+                                <td class="bingo-cell">Clair Obscur: Expedition 33</td>
+                                <td class="bingo-cell">Pokemon Card</td>
+                            </tr>
+                            <tr>
+                                <td class="bingo-cell">Monster Hunter</td>
+                                <td class="bingo-cell bingo-example">Weapon</td>
+                                <td class="bingo-cell bingo-example">Hero</td>
+                                <td class="bingo-cell">Kaiju No. 8</td>
+                                <td class="bingo-cell">Funko Pop</td>
+                            </tr>
+                            <tr>
+                                <td class="bingo-cell">Mystery Box</td>
+                                <td class="bingo-cell">Jinx</td>
+                                <td id="free-cell">FREE</td>
+                                <td class="bingo-cell">Solo Leveling</td>
+                                <td class="bingo-cell">Tyranids</td>
+                            </tr>
+                            <tr>
+                                <td class="bingo-cell">Naruto</td>
+                                <td class="bingo-cell">Naruto Uzumaki</td>
+                                <td class="bingo-cell bingo-example">Nintendo</td>
+                                <td class="bingo-cell bingo-example">Video Game</td>
+                                <td class="bingo-cell">VTuber</td>
+                            </tr>
+                            <tr>
+                                <td class="bingo-cell">God</td>
+                                <td class="bingo-cell">Labubu</td>
+                                <td class="bingo-cell bingo-example">Super Smash Bros. Ultimate</td>
+                                <td class="bingo-cell">Food</td>
+                                <td class="bingo-cell bingo-example">Shield</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <li class="rules">If something isn't very specific, you can assume you can take any picture related to it</li>
+                    <p class="example">
+                        For example: if you were given "Naruto" you can take a picture of the character Rock Lee or anything else related of the show, but if you were given "Naruto Uzumaki" then I expect to see a picture of Naruto 
+                    </p>
+                    <li class="rules">I won't be that strict with the rules and do encourage creativity!</li>
+                    <p class="example">
+                        For example: if you were given "Food" you can take a picture of Paimon as I am aware of the in-game joke
+                    </p>
+                    <li class="rules">You can reroll your bingo card as many times as you want to find easy ones (you can start doing this now)</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>But Dawn what do I get for winning other than the glory?</h2>
+                <button id="prize-text" transition: background 0.3s, transform 0.2s;" onclick="this.style.background='linear-gradient(90deg, #43cea2, #185a9d)'; this.innerText='First person to get BINGO wins $100 cash!';">Click Me!</button>
+                <p>When you do win and get BINGO, you need to post your bingo card and the pictures on discord</p>
+                <p>If it does end up taking too long, you guys can decide the time limit and pick the winner based on who is closer to bingo and has the most done</p>
+            </section>
+            <section id="countdown-timer">
+                <h2>Countdown to Metrocon (July 25, 2025 Friday)</h2>
+                <div id="timer" style="font-size: 2em; font-weight: bold;"></div>
+            </section>
+
+            <section>
+                <h3 class="flash-warning">WARNING</h3>
+                <p class="flash-warning"><b>Beware your Bingo card does not save and will reset when you refresh the page!</b></p>
+                <p class="flash-warning">So you will need to screenshot it once you have decided, but can change it at anytime</p>
+            </section>         
+            
+            <section>
+                <table id="bingo-card" style="border-collapse: collapse; margin: 20px 0;">
+                    <h2>Bingo Card</h2>
+                    <tbody>
+                        <tr>
+                            <td class="bingo-cell" id="cell-0"></td>
+                            <td class="bingo-cell" id="cell-1"></td>
+                            <td class="bingo-cell" id="cell-2"></td>
+                            <td class="bingo-cell" id="cell-3"></td>
+                            <td class="bingo-cell" id="cell-4"></td>
+                        </tr>
+                        <tr>
+                            <td class="bingo-cell" id="cell-5"></td>
+                            <td class="bingo-cell" id="cell-6"></td>
+                            <td class="bingo-cell" id="cell-7"></td>
+                            <td class="bingo-cell" id="cell-8"></td>
+                            <td class="bingo-cell" id="cell-9"></td>
+                        </tr>
+                        <tr>
+                            <td class="bingo-cell" id="cell-10"></td>
+                            <td class="bingo-cell" id="cell-11"></td>
+                            <td id="free-cell">FREE</td>
+                            <td class="bingo-cell" id="cell-13"></td>
+                            <td class="bingo-cell" id="cell-14"></td>
+                        </tr>
+                        <tr>
+                            <td class="bingo-cell" id="cell-15"></td>
+                            <td class="bingo-cell" id="cell-16"></td>
+                            <td class="bingo-cell" id="cell-17"></td>
+                            <td class="bingo-cell" id="cell-18"></td>
+                            <td class="bingo-cell" id="cell-19"></td>
+                        </tr>
+                        <tr>
+                            <td class="bingo-cell" id="cell-20"></td>
+                            <td class="bingo-cell" id="cell-21"></td>
+                            <td class="bingo-cell" id="cell-22"></td>
+                            <td class="bingo-cell" id="cell-23"></td>
+                            <td class="bingo-cell" id="cell-24"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="reroll-bingo" style="margin: 20px 0; font-size: 1.1em;">Reroll Bingo Card</button>
+            </section>
+
+            <div style="margin: 20px 0;">
+                <h2>This will temporarily save your bingo card until you refresh the page</h2>
+                <p>Only you can see this and it doesn't matter what name you put!</p> 
+                <p>You can save as many as you want to help with your reroll, but remember to take a screenshot for backup and once you decided!</p>
+                <div style="display: flex; justify-content: center; align-items: center; margin-top: 12px;">
+                    <input type="text" id="player-name" placeholder="Enter your name" style="font-size:1em; padding:4px;">
+                    <button id="save-bingo" style="font-size:1em; margin-left:8px;">Save Bingo Card</button>
+                </div>
+            </div>
+            <div id="saved-cards" style="margin: 20px 0;"></div>
+
+        </main>
+        
+    </body>
+    <script src="metrocon.js"></script>
+</html>

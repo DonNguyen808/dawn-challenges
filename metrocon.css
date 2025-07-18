@@ -1,0 +1,154 @@
+/* do I use a separate css file for each page */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+}
+main, section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 1px solid green;
+}
+header, section, h1, h2, h3, p {
+    text-align: center;
+    width: 100%;
+}
+table#bingo-card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bingo-cell, #free-cell {
+    border: 1px solid #333;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#free-cell {
+    background: #eee;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/* Flash animation for warning */
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
+}
+
+.flash-warning {
+    color: red;
+    animation: flash 5s linear infinite;
+}
+
+/* Style for bingo card table */
+#bingo-card {
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Style for saved cards table */
+.saved-bingo-table {
+    border-collapse: collapse;
+    margin: 10px auto;
+    background: #fafafa;
+}
+
+.saved-bingo-table td {
+    border: 1px solid #333;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 1em;
+    padding: 4px;
+}
+
+.saved-bingo-table .free-cell {
+    background: #eee;
+    font-weight: bold;
+}
+
+/* Style for saved card wrapper */
+.saved-card-wrapper {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* Title row for saved card */
+.saved-card-title-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.saved-card-title {
+    font-weight: bold;
+}
+
+/* Delete button for saved card */
+.saved-card-delete-btn {
+    font-size: 0.95em;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.bingo-example {
+    background: #ffcccc; /* light red */
+}
+
+#link-example {
+    display: block;
+    margin: 0 auto 10px auto;
+    max-width: 200px;
+    height: auto;
+}
+
+
+#rules {
+    text-align: left;
+    max-width: 600px;
+}
+
+.rules {
+    margin-bottom: 12px;
+}
+
+.example {
+    display: block;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+
+#prize-text {
+    cursor:pointer;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 24px;
+    font-size: 1.1em; 
+    font-weight: bold;
+    box-shadow: 0 4px 14px rgba(229,46,113,0.15);
+    transition: background 0.3s, transform 0.2s;
+}
+
