@@ -169,8 +169,8 @@ const scavengerObjects = {
         "Jiro Awasaka", "Haruta Shigemo",
 
         // Cursed Spirits & Death Paintings
-        "Ryomen Sukuna", "Mahito", "Jogo", "Hanami", "Dagon",
-        "Choso", "Eso", "Kechizu", "Locust Guy", "Rika Orimoto",
+        "Ryomen Sukuna", "Mahito", "Jogo",
+        "Choso", "Rika Orimoto",
 
         // Supporting / background characters
         "Riko Amanai", "Misato Kuroi", "Shiu Kong", "Yu Haibara",
@@ -752,7 +752,6 @@ const scavengerObjects = {
         "Dry Bowser",
         "Luma",
         "Iggy",
-        "Lemmy",
         "Ludwig",
         "Larry",
         "Wendy",
@@ -941,6 +940,7 @@ const scavengerObjects = {
         "Mob Psycho 100",
     ],
     videoGames: [
+        "Commander Shepard",
         "Ezio Auditore",
         "Assassin's Creed",
         "Aloy",
@@ -1009,6 +1009,7 @@ const scavengerObjects = {
         "Fatal Fury",
         "Iori Yagami",
         "NieR: Automata",
+        "2B",
         "Parappa",
         "Elden Ring",
         "Godfrey",
@@ -1533,6 +1534,12 @@ const scavengerObjects = {
     ],
     shows : [
         "Disney",
+        "The Lion King",
+        "The Little Mermaid",
+        "Aladdin",
+        "Mulan",
+        "Toy Story",
+        "Peter Pan",
         "Elsa",
         "Harry Potter",
         "The Witcher",
@@ -1664,7 +1671,9 @@ const scavengerObjects = {
         "Powerful",
         "Respected",
         "Brave",
+        "Ugly",
         "Weak",
+        "Strong",
         "Coward",
         "Cute",
         "Robot",
